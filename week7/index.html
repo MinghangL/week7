@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Window Size Tracker</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      background: linear-gradient(to right, #6a11cb, #2575fc);
+      color: white;
+      text-align: center;
+    }
+    #size-display {
+      font-size: 2rem;
+      background: rgba(0, 0, 0, 0.5);
+      padding: 1rem 2rem;
+      border-radius: 8px;
+    }
+    .unit-switcher {
+      margin-top: 20px;
+      font-size: 1rem;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <div id="size-display">
+    Width: <span id="width"></span>px, Height: <span id="height"></span>px
+  </div>
+  <div class="unit-switcher">
+    <button onclick="switchUnit('px')">Pixels (px)</button>
+    <button onclick="switchUnit('em')">EM</button>
+    <button onclick="switchUnit('%')">Percentage (%)</button>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>
